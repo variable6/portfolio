@@ -1,0 +1,29 @@
+---
+import '../styles/global.css'
+import Footer from '../components/layout/footer.astro'
+import Header from '../components/layout/header.astro'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- <meta name="generator" content={Astro.generator} /> -->
+    <meta name="description" content="Pranay kumar - Full Stack Developer" />
+    <title>Pranay kumar</title>
+  </head>
+  <body class="flex justify-center bg-background">
+    <div>
+      <main
+        class="flex min-h-screen h-auto w-screen max-w-[60rem] flex-col items-center px-6 pb-10 pt-0 text-[0.92rem] leading-relaxed sm:px-10 lg:px-10"
+      >
+        <Header />
+        <slot />
+        <Footer />
+      </main>
+    </div>
+    <div class="bottom-glow"></div>
+  </body>
+</html>

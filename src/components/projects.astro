@@ -1,0 +1,45 @@
+---
+import Section from './ui/section.astro'
+import Card from './ui/card.astro'
+import { app } from '../config'
+---
+
+<Section title="Projects">
+  <Card
+    as="a"
+    target="_blank"
+    href="https://github.com/variable6/project-tracking-system"
+    heading="Project Tracking System (PTS) using MERN Stack"
+    date="APR 2021 - MAY 2021"
+  >
+    <p class="text-muted-foreground">
+      The project tracking system (PTS) is a web application that provides tracking and management of various projects within
+      an organization or company. It is used to track & monitor the multiple projects & project tasks running within an
+      organization.
+    </p>
+  </Card>
+
+  <Card
+    as="a"
+    target="_blank"
+    href="https://github.com/variable6/e-study"
+    heading="E-Study"
+    subheading="A distance learning app"
+    date="DEC 2020 - FEB 2021"
+  >
+    <p class="text-muted-foreground">
+      The project titled “E-STUDY” is a “MERN” application. This Application provides numerous features to assist
+      institutions, such as colleges or universities. This application will help many institutions make their work or tasks
+      easier. In this application, there will be an admin who grants access permissions to both Students and faculty members,
+      allowing them to perform their tasks.
+    </p>
+  </Card>
+
+  <a
+    href={app.links.github}
+    target="_blank"
+    class="flex flex-row w-fit items-center gap-x-3 rounded-3xl border border-gray-600 px-4 py-2 text-sm shadow-sm transition-all hover:shadow-md"
+  >
+    <span class="font-medium">View More projects</span>
+  </a>
+</Section>
