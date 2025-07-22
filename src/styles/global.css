@@ -105,6 +105,8 @@
 html {
   color-scheme: dark;
   background-color: hsl(var(--background));
+
+  overflow-x: hidden;
 }
 
 body::after {

@@ -1,0 +1,16 @@
+---
+import Section from './ui/section.astro'
+import SkillLayout from './ui/skill-layout.astro'
+
+const languages = ['c', 'Dart', 'Go', 'HTML', 'CSS', 'JavaScript', 'Python', 'TypeScript']
+const databases = ['MongoDB', 'MySQL', 'Postgres', 'SQL Server']
+const technologies = ['Express.js', 'Flutter', 'Git', 'GraphQL', 'gRPC', 'Node.js', 'React', 'REST API']
+const others = ['Full-Stack development', 'Mobile Application development', 'Web Development']
+---
+
+<Section title="Skills">
+  <SkillLayout title="Languages" skills={languages} />
+  <SkillLayout title="Databases" skills={databases} />
+  <SkillLayout title="Technologies" skills={technologies} />
+  <SkillLayout title="Areas" skills={others} />
+</Section>
